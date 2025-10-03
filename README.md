@@ -1,24 +1,42 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+This is a real-time, collaborative note-taking application inspired by Notion, built with the latest web technologies.
+
+## ✨ Features
+
+- **Real-time Database**: Powered by Convex for seamless, real-time data synchronization.
+- **Authentication**: Secure user sign-up and login.
+- **Note Management**: Create, read, update, and delete documents.
+- **Responsive Design**: A fluid and intuitive interface that works on all devices.
+- **Light & Dark Mode**: Switch between light and dark themes for your comfort.
+- **Resizable Sidebar**: A collapsible and resizable navigation panel for a customizable workspace.
+
+## 🚀 Tech Stack
+
+- **Framework**: Next.js
+- **Database & Backend**: Convex
+- **Styling**: Tailwind CSS
+- **UI Components**: shadcn/ui
+- **Icons**: Lucide React
+- **Font**: Geist
 
 ## Getting Started
 
-First, run the development server:
+To get a local copy up and running, follow these simple steps.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+1.  **Set up your Convex backend:**
+    - Go to Convex and create a new project.
+    - Copy the `CONVEX_DEPLOYMENT` environment variable from your project settings.
+    - Create a `.env.local` file in the root of your project and add the variable:
+      ```
+      NEXT_PUBLIC_CONVEX_URL="<your-convex-deployment-url>"
+      ```
+
+2.  **Install dependencies and run the development server:**
+    ```bash
+    npm install
+    npm run dev
+    ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
 
 ## Learn More
 
