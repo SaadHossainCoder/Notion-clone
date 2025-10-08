@@ -14,19 +14,14 @@ const Dashboard = () => {
     const { user } = useUser();
     const create = useMutation(api.documents.createDocument);
 
-    const handleCreate = async () => {
-        const promise = create({
-            title: "Untitled Document",
-        })
-        
-        console.log(promise);
-        
+    const handleCreate = () => {
+        const promise = create({ title: "Untitled Document" });
 
         toast.promise(promise, {
-            loading: "Creating New note...",
-            success: "Note Created!",
-            error: "Failed to create note.",
-        })
+            loading: "Creating a new note...",
+            success: "New note created!",
+            error: "Failed to create a new note."
+        });
     };
 
     return (
